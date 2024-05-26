@@ -49,38 +49,38 @@
            app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
            <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
+               android:layout_width="95dp"
+               android:layout_height="100dp"
                android:layout_marginStart="12dp"
                android:background="@drawable/circle_mints"
-               android:textSize="20sp"
+               android:onClick="TewntyFive"
                android:text="25 M"
                android:textColor="@color/white"
-               android:onClick="TewntyFive"
+               android:textSize="20sp"
                android:textStyle="bold" />
 
            <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
+               android:layout_width="95dp"
+               android:layout_height="100dp"
                android:layout_centerHorizontal="true"
                android:layout_marginLeft="5dp"
-               android:onClick="ThrityFive"
                android:background="@drawable/circle_mints"
-               android:textSize="20sp"
+               android:onClick="ThrityFive"
                android:text="35 M"
                android:textColor="@color/white"
+               android:textSize="20sp"
                android:textStyle="bold" />
 
            <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
+               android:layout_width="95dp"
+               android:layout_height="100dp"
                android:layout_alignParentEnd="true"
-               android:layout_marginEnd="12dp"
-               android:onClick="Hour"
+               android:layout_marginEnd="20dp"
                android:background="@drawable/circle_mints"
-               android:textSize="20sp"
+               android:onClick="Hour"
                android:text="60 M"
                android:textColor="@color/white"
+               android:textSize="20sp"
                android:textStyle="bold" />
 
        </RelativeLayout>
@@ -118,6 +118,22 @@
            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
            app:layout_constraintVertical_bias="0.471" />
 
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/addNoteBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginEnd="97dp"
+           android:layout_marginBottom="5dp"
+           android:clickable="true"
+           app:layout_constraintBottom_toTopOf="@+id/imageView2"
+           app:layout_constraintEnd_toStartOf="@+id/today"
+           app:layout_constraintHorizontal_bias="0.066"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="1.0"
+           app:srcCompat="@android:drawable/ic_menu_add" />
 
 
    </androidx.constraintlayout.widget.ConstraintLayout>

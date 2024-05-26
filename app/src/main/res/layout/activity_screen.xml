@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Screen"
     android:layout_gravity="center"
-    android:background="#211d44"
-    >
+    android:background="#F3F3F3"
+    tools:context=".Screen">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/screenicon"
+        android:src="@mipmap/logoproject"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
@@ -25,8 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.583"
@@ -37,21 +36,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold"
             android:layout_marginTop="5dp"
             android:text="If you cannot do great things "
-            />
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold"
             android:layout_marginTop="5dp"
             android:text="do small things in a great way"
-            />
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

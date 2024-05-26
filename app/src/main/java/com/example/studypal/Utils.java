@@ -29,7 +29,7 @@ public class Utils {
     public String getData()
     {
         Calendar calendar=Calendar.getInstance();
-        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd-MMM-yyyy");
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("MMM dd, yyyy");
         String date=simpleDateFormat.format(calendar.getTime());
         return date ;
     }

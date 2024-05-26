@@ -4,11 +4,15 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Home extends AppCompatActivity {
+    FloatingActionButton addNoteBtn;
 
     Intent intent;
     public static final String number="Value";
@@ -24,8 +28,12 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+         //Creating the dbTables
+
         intent=new Intent(Home.this,Clock.class);
         Preferences=getSharedPreferences(myPref,MODE_PRIVATE);
+        addNoteBtn =  findViewById(R.id.addNoteBtn);
+
 
         TextView Slider=findViewById(R.id.textslide);
         TextView today=findViewById(R.id.today);
@@ -56,9 +64,17 @@ public class Home extends AppCompatActivity {
             editor.putInt(LastIndex,i);
             editor.commit();
         }
-
-
-
+           try{
+               addNoteBtn.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View view) {
+                       Intent intent = new Intent(Home.this, Display.class);
+                       startActivity(intent);
+                   }
+               });
+           }catch (Exception e){
+               e.printStackTrace();
+           }
 
     }
 
